@@ -56,7 +56,6 @@ def share_closet():
 			print('Shared the {} item in your closet.'.format(shared))
 			sleep(5)
 	print('We shared {} items.'.format(shared))
-	print('Now we will wait for 6 hours before we share again.')
 
 if __name__ == '__main__':
 	while True:
@@ -70,4 +69,5 @@ if __name__ == '__main__':
 		share_closet()
 		driver.close()
 		display.stop()
+		print('Now we will wait for 6 hours before we share again.')
 		sleep(21600) # sleep for 6 hours i.e. 21600 seconds
